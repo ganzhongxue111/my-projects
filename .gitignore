@@ -1,0 +1,41 @@
+# 密钥与本地配置
+.env
+.env.local
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+
+# 数据与模型（体积大）
+datasets/*.json
+!datasets/.gitkeep
+logs/*
+!logs/.gitkeep
+*.pt
+*.bin
+*.safetensors
+chroma_db/
+.persist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 导出脚本产物（按需）
+# *.pdf
