@@ -23,10 +23,6 @@ def _client() -> tuple[OpenAI, str]:
             os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
         )
     key = os.getenv("DEEPSEEK_API_KEY")
-    print(key)
-    base_url = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
-    print(base_url)
-    print(os.getenv("DEEPSEEK_MODEL", "deepseek-chat"))
     if not key or key.startswith("sk-your"):
         print("请在 .env 中配置 DEEPSEEK_API_KEY")
         sys.exit(1)
